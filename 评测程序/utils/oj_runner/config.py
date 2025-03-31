@@ -1,0 +1,3 @@
+# config.py  
+JUDGE_SERVER_TOKEN = "CHANGE_THIS"  
+JUDGE_SERVER_URL = "http://192.168.26.133:8080/"
