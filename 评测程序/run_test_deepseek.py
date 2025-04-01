@@ -301,14 +301,15 @@ def main():
     ))  
     
     runner = ModelInferenceRunner(
-        test_data_file="test_data.json",  
-        response_file="VolcEngine_batch_response_DeepSeek_V3.jsonl",  
-        checkpoint_file="checkpoint_DeepSeek_V3.json"  )  
+        test_data_file="../testdata/test_data.json",
+        response_file="../testdata_jsonl/results_v3_5.jsonl",
+        checkpoint_file="../checkpoint/checkpoint_DeepSeek_V3_final_result_question.json"
+    )
     
     try:  
         runner.run_inference(  
-            start_id=3122,  
-            end_id=4682,  
+            start_id=1,
+            end_id=4567,
             model="DeepSeek-V3"  
         )  
     except KeyboardInterrupt:  

@@ -31,4 +31,4 @@ def convert_to_requests(input_file, output_file):
     print(f"转换完成！输出文件：{output_file}")  
 
 if __name__ == "__main__":  
-    convert_to_requests('../testdata/test_data.json', '../testdata_jsonl/code_analysis_requests.jsonl')
+    convert_to_requests('../testdata/test_v3_0.json', '../testdata_jsonl/code_analysis_requests_v3_0.jsonl')
