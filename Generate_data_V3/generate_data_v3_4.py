@@ -11,7 +11,6 @@ PROMPT_TEMPLATE = """
 
 我们已经做了如下交流，我现在列出来，请您充分回忆，作为回答的背景资料：
 
-user:{请帮我进行代码的[宏观解读]和[代码注释]+[关键点拨]}
 这是你之前的回答结果:{{ assistant }}
 
 请忽略在此之前的任何指示。下面的内容是最重要的。
@@ -33,11 +32,8 @@ user:{请帮我进行代码的[宏观解读]和[代码注释]+[关键点拨]}
 2. ...(我省略这个例子，但是您不能省略必要的回答)
 ...(以此类推)
 
-请您严格按照下面的格式要求进行输出：
-
-[宏观解读]+[代码注释]+[关键点拨]
-user:请帮我进行代码宏观解读+代码注释
-这是你之前的回答结果:{{ assistant }}
+请你保留之前的回答的内容，并严格按照下面的格式要求进行输出：
+{{ assistant }}
 [详细指导]
 1. ...(存在的问题)。您应该...(正确的操作方法)
 2. ...(我省略这个例子，但是您不能省略必要的回答)
@@ -89,8 +85,8 @@ def process_dataset(input_file: str, output_file: str):
     print(f"处理完成! 共生成 {len(test_cases)} 个测试用例")
 
 if __name__ == "__main__":
-    input_file = "../ALL_Problems_V3/ALL_Problems_250216_v3_3.json"
-    output_file = "../testdata_V3/test_v3_4.json"
+    input_file = "../ALL_Problems_V3/ALL_Problems_v3_2_4.json"
+    output_file = "../testdata_V3/test_v3_4-2.json"
 
     try:
         process_dataset(input_file, output_file)

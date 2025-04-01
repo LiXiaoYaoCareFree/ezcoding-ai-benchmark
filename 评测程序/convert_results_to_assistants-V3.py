@@ -2,9 +2,9 @@
 import json
 
 # 文件路径
-results_path = "../Results_V3_1/results_v3_4.jsonl"
-all_problems_path = "../评测数据集/ALL_Problems_250216.json"
-output_path = "../ALL_Problems_V3/ALL_Problems_250216_v3_4.json"
+results_path = "../Results_V3_2/results_v3_3.jsonl"
+all_problems_path = "../评测数据集/ALL_Problems_250216.json" # 不用改这个文件
+output_path = "../ALL_Problems_V3/ALL_Problems_v3_2_4.json"
 
 # 读取 results.jsonl 中的每一行
 with open(results_path, "r", encoding="utf-8") as f:
@@ -34,4 +34,4 @@ for problem in all_problems:
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(all_problems, f, ensure_ascii=False, indent=2)
 
-print("转换完成，文件已保存为 ALL_Problems_250216_v3_4.json")
+print("转换完成，文件已保存为 ALL_Problems_v3_2_3.json")
