@@ -51,3 +51,5 @@ prompts/tools/code.cpp
 prompts/tools/code.py
 prompts/tools/code.java
 enhance/processed/md-lellansin/*
+*.log
+评测程序/logs/
