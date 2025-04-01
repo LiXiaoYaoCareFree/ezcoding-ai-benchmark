@@ -36,7 +36,7 @@ class ModelInferenceRunner:
                  checkpoint_file: str = "checkpoint_ds.json"):
         self.test_data_file = test_data_file
         self.checkpoint_file = checkpoint_file
-        self.log_dir = "logs"
+        self.log_dir = "../评测程序/logs"
         self.error_log_file = os.path.join(
             self.log_dir,
             f"error_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
@@ -305,9 +305,9 @@ def main():
     ))
 
     runner = ModelInferenceRunner(
-        test_data_file="../testdata/test_data.json",
-        response_file="../中间产物/VolcEngine_batch_response_DeepSeek_V3.jsonl",
-        checkpoint_file="../checkpoint/checkpoint_DeepSeek_V3_raw.json")
+        test_data_file="../testdata_V3/test_data.json",
+        response_file="../Results_V3_1/results_v3_0.jsonl",
+        checkpoint_file="../checkpoint_V3/checkpoint_DeepSeek_V3_final_result_question.json")
 
     try:
         runner.run_inference(

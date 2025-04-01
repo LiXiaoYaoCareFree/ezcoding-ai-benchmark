@@ -2,9 +2,9 @@
 import json
 
 # 文件路径
-results_path = "../testdata_jsonl/results_v3_4.jsonl"
+results_path = "../Results_V3_1/results_v3_4.jsonl"
 all_problems_path = "../评测数据集/ALL_Problems_250216.json"
-output_path = "../testdata_jsonl/ALL_Problems_250216_v3_4.json"
+output_path = "../ALL_Problems_V3/ALL_Problems_250216_v3_4.json"
 
 # 读取 results.jsonl 中的每一行
 with open(results_path, "r", encoding="utf-8") as f:

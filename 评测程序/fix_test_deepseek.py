@@ -95,9 +95,9 @@ class CheckpointFixer:
 
 def main():  
     fixer = CheckpointFixer(  
-        test_data_file="../testdata/test_data.json",
-        checkpoint_file="../checkpoint/Result_DeepSeek_v3_5.json",
-        response_file="../testdata_jsonl/results_v3_0.jsonl"
+        test_data_file="../testdata_V3/test_data.json",
+        checkpoint_file="../checkpoint_V3/Result_DeepSeek_v3_5.json",
+        response_file="../Results_V3_1/results_v3_0.jsonl"
     )  
     
     try:  

@@ -301,9 +301,9 @@ def main():
     ))  
     
     runner = ModelInferenceRunner(
-        test_data_file="../testdata/test_data.json",
-        response_file="../testdata_jsonl/results_v3_5.jsonl",
-        checkpoint_file="../checkpoint/checkpoint_DeepSeek_V3_final_result_question.json"
+        test_data_file="../testdata_V3/test_data.json",
+        response_file="../Results_V3_1/results_v3_5.jsonl",
+        checkpoint_file="../checkpoint_V3/checkpoint_DeepSeek_V3_final_result_question.json"
     )
     
     try:  

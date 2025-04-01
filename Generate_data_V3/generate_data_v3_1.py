@@ -81,8 +81,8 @@ def process_dataset(input_file: str, output_file: str):
     print(f"处理完成! 共生成 {len(test_cases)} 个测试用例")
 
 if __name__ == "__main__":
-    input_file = "../testdata_jsonl/ALL_Problems_250216_updated.json"
-    output_file = "../testdata/test_v3_2.json"
+    input_file = "../ALL_Problems_V3/ALL_Problems_250216_updated.json"
+    output_file = "../testdata_V3/test_v3_2.json"
 
     try:
         process_dataset(input_file, output_file)

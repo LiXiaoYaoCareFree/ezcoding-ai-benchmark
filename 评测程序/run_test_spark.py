@@ -33,7 +33,7 @@ def setup_logging(log_dir: str = "logs") -> None:
     )  
 
 class ModelInferenceRunner:  
-    def __init__(self, test_data_file: str, checkpoint_file: str = "checkpoint.json"):  
+    def __init__(self, test_data_file: str, checkpoint_file: str = "checkpoint_V3.json"):
         self.test_data_file = test_data_file  
         self.checkpoint_file = checkpoint_file  
         self.log_dir = "logs"  

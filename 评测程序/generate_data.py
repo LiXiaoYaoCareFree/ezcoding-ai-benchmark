@@ -68,7 +68,7 @@ def process_dataset(input_file: str, output_file: str):
 if __name__ == "__main__":
     # 使用示例
     input_file = "../dataset/ALL_Problems_250216.json"  # 原始数据文件路径
-    output_file = "../testdata/test_v3_0.json"  # 输出文件路径
+    output_file = "../testdata_V3/test_v3_0.json"  # 输出文件路径
     
     try:
         process_dataset(input_file, output_file)
